@@ -1,0 +1,8 @@
+#!/bin/bash
+date=$(date +%Y-%m-%d)
+file_name=(${date}_group.txt)
+for i in one two three four five
+do
+echo $i
+echo $i>>$date
+done

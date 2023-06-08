@@ -1,0 +1,12 @@
+#!/bin/bash
+num1=$RANDOM
+num2=$RANDOM
+square_one=$(echo "$num1" | awk '{printf "%.0f", sqrt($1)}')
+square_two=$(echo "$num2" | awk '{printf "%.0f", sqrt($1)}')
+echo "The first random number generated is $num1"
+echo "The square root is $square_one"
+echo "The second random number generated is $num2"
+echo "The square root is $square_two"
+sum=$(("$square_one + $square_two"))
+echo "The sum of their square roots is $sum"
+~
