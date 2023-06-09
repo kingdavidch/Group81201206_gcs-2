@@ -1,0 +1,6 @@
+#!/bin/bash
+echo "Enter your first number: "
+read num_1
+echo "Enter your second number: "
+read num_2
+echo "The product of $num_1 and $num_2 is $(($num_1 * $num_2))"
